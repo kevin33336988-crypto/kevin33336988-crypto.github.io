@@ -33,13 +33,24 @@ const projects = [
     desc: "2019年GEN.T舉辦於信義新光三越WILDWOOD。活動流程因有安排得獎者揭幕儀式，所以在舞台及名人牆的發想中跳脫以往制式揭幕方法，改利用類似拉門的結構作動同時搭配LED燈條及現場燈控效果，讓賓客有更好的視覺體驗。"
   },
   {
+    id: "la-marzocco",
+    title: "LA MARZOCCO COFFEE FESTIVAL 咖啡節快閃店",
+    client: "LA MARZOCCO",
+    year: "2020",
+    category: "pop-up",
+    cover: "img/04-lm-1.jpg",
+    images: ["img/04-lm-1.jpg", "img/04-lm-2.jpg", "img/04-lm-3.jpg"],
+    role: "空間結構配置、創意發想、平面輸出",
+    desc: "LA MARZOCCO 被譽為咖啡界的勞斯萊斯，旗下品牌機型皆具有高級工藝感，在發想上除了運用主要識別元素黑、木色調外同時也將主打機款KB90獨特稜角造型帶入展間立體結構；鮮明線條構成的量體搭配展示吧台，讓參與者有最直接新鮮的咖啡體驗及空間印象。"
+  },
+  {
     id: "bellavita-desert",
     title: "BELLAVITA 沙漠市集",
     client: "BELLAVITA 寶麗廣場",
     year: "2023",
     category: "brand-event",
-    cover: "img/04-bellavita-desert.jpg",
-    images: ["img/04-bellavita-desert.jpg"],
+    cover: "img/05-bellavita-desert.jpg",
+    images: ["img/05-bellavita-desert.jpg"],
     role: "設計主管 · 空間規劃與執行主導",
     desc: "歷時半年籌備，於 BELLAVITA 中庭磅礡打造北非沙漠市集。夢幻吊燈、波斯地毯、香料販子、手工編織藝品與雙峰駱駝現蹤，原貌呈現異國風情。晝夜皆美——白天的光影在牆面與地毯舞動，夜晚點燈展現市集神祕迷人的面貌。"
   },
@@ -49,8 +60,8 @@ const projects = [
     client: "TAIPEI 101",
     year: "2023",
     category: "brand-event",
-    cover: "img/05-101-fairytale.jpg",
-    images: ["img/05-101-fairytale.jpg"],
+    cover: "img/06-101-fairytale.jpg",
+    images: ["img/06-101-fairytale.jpg"],
     role: "設計主管 · 全區規劃統籌",
     desc: "從 101 購物中心外圍光廊與夢幻馬車，到 1F 諾貝松森林、4F 童話王國與 89F 希望之境，全區超過 600 米範圍。莓粉與香檳色花瀑鋪天蓋地渲染浪漫光亭，長頸鹿守護月光寶座，旋轉木馬與薑餅人交織出大人小孩都捨不得離開的樂園。"
   },
@@ -60,8 +71,8 @@ const projects = [
     client: "BELLAVITA 寶麗廣場",
     year: "2024",
     category: "brand-event",
-    cover: "img/06-bellavita-ice.jpg",
-    images: ["img/06-bellavita-ice.jpg"],
+    cover: "img/07-bellavita-ice.jpg",
+    images: ["img/07-bellavita-ice.jpg"],
     role: "設計主管 · 空間設計主導",
     desc: "精緻刻劃森林冰湖冬景，三座玻璃屋各具角色：綠意溫室、溫暖休憩小屋與頂級晚宴廳。壁爐火光、諾貝松、松果與金色燭台散發節慶氣息。透過落地玻璃窗欣賞雪花飄落，雀鳥、馴鹿、雪兔與白熊穿梭其間，心靈也感到平靜與幸福。"
   },
@@ -71,8 +82,8 @@ const projects = [
     client: "BELLAVITA 寶麗廣場",
     year: "2025",
     category: "brand-event",
-    cover: "img/07-bellavita-feast.jpg",
-    images: ["img/07-bellavita-feast.jpg"],
+    cover: "img/08-bellavita-feast.jpg",
+    images: ["img/08-bellavita-feast.jpg"],
     role: "設計主管 · 創意發想與執行主導",
     desc: "踏入的瞬間，彷彿化身成微小旅人，不小心闖入一張為巨型小熊準備的盛大餐桌。金黃酥香的麵包宛如冬日山丘，糖霜餅乾如閃亮雪石，甜甜圈與蛋糕延展成層層甜蜜的桌景。超現實比例下的視覺語彙，展現奇幻的節日魅力。"
   },
@@ -82,8 +93,8 @@ const projects = [
     client: "TAIPEI 101",
     year: "2025",
     category: "brand-event",
-    cover: "img/08-101-circus.jpg",
-    images: ["img/08-101-circus.jpg"],
+    cover: "img/09-101-circus.jpg",
+    images: ["img/09-101-circus.jpg"],
     role: "設計主管 · 空間設計主導",
     desc: "靈感源自巡迴馬戲團的奇幻氛圍，步入場景彷彿走進一座正在上演的節慶舞台。燈光亮起時，動物們歡快穿梭在華麗的旋轉木馬之間，隨著光影與節奏輕盈移動。洋溢熱鬧又浪漫的節慶氣息，呈現夢想與希望交織的奇幻時刻。"
   },
@@ -93,8 +104,8 @@ const projects = [
     client: "TAIPEI 101",
     year: "2024",
     category: "brand-event",
-    cover: "img/09-101-masterpiece.jpg",
-    images: ["img/09-101-masterpiece.jpg"],
+    cover: "img/10-101-masterpiece.jpg",
+    images: ["img/10-101-masterpiece.jpg"],
     role: "設計主管 · 展場設計主導",
     desc: "一年一度的頂級珠寶腕錶大賞。主視覺布幔採用各種濃淡橘色調垂布搭配流線型燈藝，呈現金橘富麗之美以及時光流逝之感。花卉植景巧妙呼應鐘錶臻品，聚焦於展品獨特風格，驚艷演繹時序之美。"
   },
@@ -104,8 +115,8 @@ const projects = [
     client: "達永建設",
     year: "2024",
     category: "commercial",
-    cover: "img/10-jixiangdao.jpg",
-    images: ["img/10-jixiangdao.jpg"],
+    cover: "img/11-jixiangdao.jpg",
+    images: ["img/11-jixiangdao.jpg"],
     role: "設計主管 · 接待中心空間設計",
     desc: "以「吉祥道」為主題規劃接待中心。取「橘」和「吉」的同音字，將互動式橘色圓球懸掛天井，輕輕拉動即營造橘球在空中彈跳的活潑可愛感。橘色小沙發、七彩草地毯與錯落樹木，陽光自天井撒下穿過樹梢，讓人忍不住待上整個下午。"
   },
@@ -115,8 +126,8 @@ const projects = [
     client: "VIVO",
     year: "2025",
     category: "brand-event",
-    cover: "img/11-vivo.jpg",
-    images: ["img/11-vivo.jpg"],
+    cover: "img/12-vivo.jpg",
+    images: ["img/12-vivo.jpg"],
     role: "設計主管 · 空間設計主導",
     desc: "於 BELLAVITA 打造限時四日的療癒秘境。「輕境亭」、「花漾散策」、「微距斑斕」、「長焦瞭望台」、「無憂回憶」五大展區，在藍白交織的夏日場景中展開。清透色調如冰沙沁入心脾，陽光輕灑在水果小攤，柑橘香氣隨風飄蕩。"
   },
@@ -126,8 +137,8 @@ const projects = [
     client: "甲桂林廣告",
     year: "2026",
     category: "commercial",
-    cover: "img/12-urban-garden.jpg",
-    images: ["img/12-urban-garden.jpg"],
+    cover: "img/13-urban-garden.jpg",
+    images: ["img/13-urban-garden.jpg"],
     role: "設計主管 · 商空設計主導",
     desc: "「把自然，帶回日常。」將自然延伸至城市高空，以層次豐富的植栽、舒適的休憩空間與開闊的視野，創造人與環境、人與人之間的連結。Urban Garden 不只是景觀設計，更是一種重視健康、永續與生活品質的空間理念。"
   }

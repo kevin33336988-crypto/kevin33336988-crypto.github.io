@@ -519,6 +519,81 @@ section {
   font-family: var(--font-ui);
   text-transform: uppercase;
 }
+.about__timeline { margin-bottom: 3rem; }
+.about__timeline-title {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
+  margin-bottom: 1.5rem;
+  font-family: var(--font-ui);
+  font-weight: 500;
+}
+.timeline {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding: 0.5rem 0;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0.6rem;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--border);
+  z-index: 0;
+}
+.timeline__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.timeline__year {
+  font-family: var(--font-en);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.6rem;
+  white-space: nowrap;
+}
+.timeline__dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  margin-bottom: 0.8rem;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+.timeline__item--current .timeline__dot {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-glow);
+}
+.timeline__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.timeline__role {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.03em;
+}
+.timeline__company {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+}
+.timeline__item--current .timeline__role { color: var(--accent); }
+
 .about__details {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -799,6 +874,28 @@ section {
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
+
+  .timeline { flex-direction: column; gap: 0; padding: 0; }
+  .timeline::before {
+    top: 0; bottom: 0;
+    left: 4px; right: auto;
+    width: 1px; height: auto;
+  }
+  .timeline__item {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+    padding: 0.8rem 0;
+  }
+  .timeline__year {
+    min-width: 70px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
+  }
+  .timeline__dot { margin-bottom: 0; margin-top: 0.15rem; }
+  .timeline__info { align-items: flex-start; }
 
   .contact { min-height: 40vh; }
 

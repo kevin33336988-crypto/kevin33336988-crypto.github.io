@@ -22,15 +22,15 @@ const projects = [
     desc: "位於信義 A11，以圓弧形結構搭配草皮花卉及異材質，讓民眾彷彿置身阿爾卑斯山腳下，呼應品牌高端、純淨清爽及主打女性客群的定位。探索、試飲、發現——一場完整的感官旅程。"
   },
   {
-    id: "tatler-ball",
-    title: "TAIWAN TATLER BALL 十週年",
+    id: "tatler-gent",
+    title: "TAIWAN TATLER GEN.T 雜誌頒獎典禮",
     client: "TAIWAN TATLER",
     year: "2019",
     category: "brand-event",
-    cover: "img/03-tatler.jpg",
-    images: ["img/03-tatler.jpg"],
-    role: "舞台視覺發想、分區配置、結構配置",
-    desc: "舉辦於文華東方，以紅金主視覺為核心，運用 LYCRA 帆布的伸縮特性與矩形 TRUSS 延展固定，每面均可投射特定畫面或賦予燈光變幻色彩，以有機流線詮釋奔放熱情與歡慶意象。"
+    cover: "img/03-gent-1.jpg",
+    images: ["img/03-gent-1.jpg", "img/03-gent-2.jpg", "img/03-gent-3.jpg"],
+    role: "舞台視覺發想、揭幕裝置發想、製作物概念發想",
+    desc: "2019年GEN.T舉辦於信義新光三越WILDWOOD。活動流程因有安排得獎者揭幕儀式，所以在舞台及名人牆的發想中跳脫以往制式揭幕方法，改利用類似拉門的結構作動同時搭配LED燈條及現場燈控效果，讓賓客有更好的視覺體驗。"
   },
   {
     id: "bellavita-desert",

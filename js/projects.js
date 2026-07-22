@@ -1,14 +1,14 @@
 const projects = [
   {
     id: "bmw-the1",
-    title: "BMW THE 1 有種不同特展",
+    title: "BMW THE 1 AND ONLY 有種不同特展",
     client: "BMW",
-    year: "2018",
+    year: "2019",
     category: "exhibition",
-    cover: "img/01-bmw-the1.jpg",
-    images: ["img/01-bmw-the1.jpg"],
+    cover: "img/01-bmw-1.jpg",
+    images: ["img/01-bmw-1.jpg", "img/01-bmw-2.jpg", "img/01-bmw-3.jpg", "img/01-bmw-4.jpg"],
     role: "空間配置、建物結構、製作物",
-    desc: "有別於傳統車展形式，將展區外部設計為街道與馬路，利用造型地毯將動線延伸至展車區。內區以自動倒車、6色光影飾板、智能語音控制及HUD抬頭顯示器為主題，結合互動體驗與社群分享，兼具展車與展覽功能。"
+    desc: "有別於以往發表會或車展的形式，當參與者在展覽現場進行視、聽覺體驗時，也同時能了解車身特色。空間發想上呼應原主視覺的街景要素，將展區外部設計為街道與馬路，同時也利用造型地毯將參觀動線延伸至後方展車區，兼具展車及展覽功能。"
   },
   {
     id: "edelweiss",

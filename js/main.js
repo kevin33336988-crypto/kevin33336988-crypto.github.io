@@ -18,24 +18,21 @@
   });
   document.body.style.overflow = 'hidden';
 
-  /* ===== CUSTOM CURSOR ===== */
+  /* ===== CUSTOM CURSOR (desktop only) ===== */
   if (cursor && cursorFollower && window.matchMedia('(hover: hover)').matches) {
     let mouseX = 0, mouseY = 0;
-    let cursorX = 0, cursorY = 0;
     let followerX = 0, followerY = 0;
 
     document.addEventListener('mousemove', (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
-      cursorX = mouseX;
-      cursorY = mouseY;
       cursor.style.left = mouseX + 'px';
       cursor.style.top = mouseY + 'px';
-    });
+    }, { passive: true });
 
     function animateFollower() {
-      followerX += (mouseX - followerX) * 0.15;
-      followerY += (mouseY - followerY) * 0.15;
+      followerX += (mouseX - followerX) * 0.12;
+      followerY += (mouseY - followerY) * 0.12;
       cursorFollower.style.left = followerX + 'px';
       cursorFollower.style.top = followerY + 'px';
       requestAnimationFrame(animateFollower);
@@ -55,9 +52,8 @@
     });
   }
 
-  /* ===== HEADER SCROLL ===== */
+  /* ===== HEADER: glass effect on scroll ===== */
   let lastScroll = 0;
-  let headerTimeout;
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     if (currentScroll > 100 && currentScroll > lastScroll) {
@@ -65,29 +61,36 @@
     } else {
       header.classList.remove('header--hidden');
     }
+    if (currentScroll > 20) {
+      header.classList.add('header--scrolled');
+    } else {
+      header.classList.remove('header--scrolled');
+    }
     lastScroll = currentScroll;
-    clearTimeout(headerTimeout);
-    headerTimeout = setTimeout(() => {
-      if (currentScroll <= 100) header.classList.remove('header--hidden');
-    }, 300);
   }, { passive: true });
 
   /* ===== RENDER PROJECTS ===== */
   function renderProjects(filter = 'all') {
     grid.innerHTML = '';
     const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+    const isMobile = window.innerWidth <= 768;
 
-    // Layout pattern: lg, md, sm, lg, md, sm...
     filtered.forEach((p, i) => {
       const card = document.createElement('div');
-      const pattern = i % 3;
-      if (pattern === 0) card.className = 'project project--lg reveal';
-      else if (pattern === 1) card.className = 'project project--md reveal';
-      else card.className = 'project project--sm reveal';
+
+      if (isMobile) {
+        // Mobile: all full-width, alternating reveal directions
+        card.className = 'project reveal ' + (i % 2 === 0 ? 'reveal--from-left' : 'reveal--from-right');
+      } else {
+        // Desktop: staggered grid
+        const pattern = i % 3;
+        if (pattern === 0) card.className = 'project project--lg reveal reveal--from-bottom';
+        else if (pattern === 1) card.className = 'project project--md reveal reveal--from-bottom';
+        else card.className = 'project project--sm reveal reveal--from-bottom';
+      }
 
       card.setAttribute('data-category', p.category);
       card.addEventListener('click', () => openModal(p));
-      card.style.transitionDelay = (i * 0.08) + 's';
 
       const media = document.createElement('div');
       media.className = 'project__media';
@@ -119,15 +122,34 @@
       grid.appendChild(card);
     });
 
-    // Reveal animation
-    requestAnimationFrame(() => {
-      const revealEls = grid.querySelectorAll('.reveal');
-      revealEls.forEach(el => {
-        el.classList.add('reveal--visible');
-        if (el.classList.contains('project--md')) el.classList.add('reveal--delay-1');
-        if (el.classList.contains('project--sm')) el.classList.add('reveal--delay-2');
+    // Intersection Observer: reveal on scroll
+    observeReveals();
+  }
+
+  /* ===== INTERSECTION OBSERVER FOR REVEALS ===== */
+  function observeReveals() {
+    const revealEls = grid.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, idx) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          // Stagger delays
+          const siblings = Array.from(revealEls).filter(e => e !== el);
+          const pos = Array.from(revealEls).indexOf(el);
+          const delay = Math.min(pos * 60, 400);
+
+          setTimeout(() => {
+            el.classList.add('reveal--visible');
+            if (el.classList.contains('project--md')) el.classList.add('reveal--delay-1');
+            if (el.classList.contains('project--sm')) el.classList.add('reveal--delay-2');
+          }, delay);
+
+          observer.unobserve(el);
+        }
       });
-    });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => observer.observe(el));
   }
 
   /* ===== MODAL ===== */
@@ -169,6 +191,17 @@
   modal.querySelector('.modal__close').addEventListener('click', closeModal);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
+  // Close modal on swipe down (mobile)
+  let touchStartY = 0;
+  modal.addEventListener('touchstart', (e) => {
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+  modal.addEventListener('touchmove', (e) => {
+    if (modal.scrollTop <= 0 && e.touches[0].clientY - touchStartY > 80) {
+      closeModal();
+    }
+  }, { passive: true });
+
   /* ===== FILTER ===== */
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -180,5 +213,15 @@
 
   /* ===== INIT ===== */
   renderProjects();
+
+  // Re-render on resize (for mobile/desktop layout switch)
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      const activeFilter = document.querySelector('.filter__btn.active');
+      renderProjects(activeFilter ? activeFilter.dataset.filter : 'all');
+    }, 300);
+  });
 
 })();

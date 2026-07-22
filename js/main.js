@@ -39,7 +39,7 @@
     }
     animateFollower();
 
-    const hoverTargets = document.querySelectorAll('a, button, .project, .filter__btn, .modal__close, .contact__email');
+    const hoverTargets = document.querySelectorAll('a, button, .project, .filter__btn, .modal__close, .contact__email, .about__stat');
     hoverTargets.forEach(el => {
       el.addEventListener('mouseenter', () => {
         cursor.classList.add('cursor--hover');

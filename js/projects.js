@@ -12,14 +12,14 @@ const projects = [
   },
   {
     id: "edelweiss",
-    title: "EDELWEISS 阿爾卑斯快閃店",
+    title: "EDELWEISS 2022 新品發表快閃店",
     client: "EDELWEISS",
-    year: "2019",
+    year: "2022",
     category: "pop-up",
-    cover: "img/02-edelweiss.jpg",
-    images: ["img/02-edelweiss.jpg"],
+    cover: "img/02-edw-1.jpg",
+    images: ["img/02-edw-1.jpg", "img/02-edw-2.jpg", "img/02-edw-3.jpg", "img/02-edw-4.jpg"],
     role: "空間結構配置、創意發想、平面輸出",
-    desc: "位於信義 A11，以圓弧形結構搭配草皮花卉及異材質，讓民眾彷彿置身阿爾卑斯山腳下，呼應品牌高端、純淨清爽及主打女性客群的定位。探索、試飲、發現——一場完整的感官旅程。"
+    desc: "位於信義 A11，設計概念利用圓弧形結構搭配草皮花卉及異材質，讓來體驗民眾彷彿置身於阿爾卑斯山腳下，同時呼應品牌高端、純淨清爽及主打女性客群的要點。探索、試飲、發現——讓我們一起來場 EDELWEISS 阿爾卑斯之旅。"
   },
   {
     id: "tatler-gent",

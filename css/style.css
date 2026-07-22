@@ -612,6 +612,14 @@ section {
   letter-spacing: 0.04em;
 }
 .footer__dot { color: var(--accent-dim); }
+.footer__disclaimer {
+  margin-top: 0.75rem;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  opacity: 0.6;
+  line-height: 1.6;
+  max-width: 600px;
+}
 
 /* ===== MODAL ===== */
 .modal {

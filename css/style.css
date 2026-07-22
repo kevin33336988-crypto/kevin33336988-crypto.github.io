@@ -21,7 +21,7 @@
   --shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.08);
   --shadow-card: 0 2px 16px rgba(0, 0, 0, 0.04), 0 1px 0 rgba(0, 0, 0, 0.04);
   --font-cn: 'Noto Sans TC', -apple-system, sans-serif;
-  --font-en: 'Playfair Display', Georgia, serif;
+  --font-en: 'DM Sans', sans-serif;
   --font-display: 'Syne', sans-serif;
   --font-ui: 'DM Sans', 'Noto Sans TC', sans-serif;
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -146,7 +146,6 @@ button { font-family: inherit; cursor: none; border: none; background: none; col
 }
 .header__link-num {
   font-family: var(--font-en);
-  font-style: italic;
   font-size: 0.65rem;
   color: var(--accent-dim);
   transition: color 0.3s;
@@ -242,7 +241,6 @@ section {
 }
 .work__header-label {
   font-family: var(--font-en);
-  font-style: italic;
   font-size: 0.85rem;
   color: var(--accent-dim);
   letter-spacing: 0.06em;
@@ -260,7 +258,6 @@ section {
 }
 .work__header-title-year {
   font-family: var(--font-en);
-  font-style: italic;
   font-size: 1.1rem;
   color: var(--accent-dim);
   font-weight: 400;
@@ -399,7 +396,6 @@ section {
 .project:hover .project__overlay { opacity: 1; }
 .project__num {
   font-family: var(--font-en);
-  font-style: italic;
   font-size: 0.7rem;
   color: #fff;
   margin-bottom: 0.5rem;
@@ -423,7 +419,6 @@ section {
 }
 .project__year {
   font-family: var(--font-en);
-  font-style: italic;
   font-size: 0.85rem;
   color: rgba(255,255,255,0.6);
   margin-top: 0.25rem;
@@ -453,7 +448,6 @@ section {
   position: absolute;
   top: 6rem; right: clamp(2rem, 5vw, 5rem);
   font-family: var(--font-en);
-  font-style: italic;
   font-size: 8rem;
   color: rgba(0, 0, 0, 0.02);
   font-weight: 700;
@@ -543,7 +537,6 @@ section {
   position: absolute;
   top: 6rem; right: clamp(2rem, 5vw, 5rem);
   font-family: var(--font-en);
-  font-style: italic;
   font-size: 8rem;
   color: rgba(0, 0, 0, 0.02);
   font-weight: 700;
@@ -577,7 +570,6 @@ section {
 }
 .contact__email:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .contact__email-arrow {
-  font-family: var(--font-en); font-style: italic;
   transition: transform 0.3s var(--ease-out-expo);
   color: var(--accent-dim);
 }
@@ -677,7 +669,6 @@ section {
 }
 .modal__meta {
   font-family: var(--font-en);
-  font-style: italic;
   font-size: 1rem;
   color: var(--text-muted);
   margin-bottom: 2.5rem;

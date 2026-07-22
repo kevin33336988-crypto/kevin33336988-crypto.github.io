@@ -77,17 +77,7 @@
 
     filtered.forEach((p, i) => {
       const card = document.createElement('div');
-
-      if (isMobile) {
-        // Mobile: all full-width, alternating reveal directions
-        card.className = 'project reveal ' + (i % 2 === 0 ? 'reveal--from-left' : 'reveal--from-right');
-      } else {
-        // Desktop: staggered grid
-        const pattern = i % 3;
-        if (pattern === 0) card.className = 'project project--lg reveal reveal--from-bottom';
-        else if (pattern === 1) card.className = 'project project--md reveal reveal--from-bottom';
-        else card.className = 'project project--sm reveal reveal--from-bottom';
-      }
+      card.className = 'project reveal reveal--from-bottom';
 
       card.setAttribute('data-category', p.category);
       card.addEventListener('click', () => openModal(p));

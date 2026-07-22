@@ -22,6 +22,7 @@
   --shadow-card: 0 2px 16px rgba(0, 0, 0, 0.04), 0 1px 0 rgba(0, 0, 0, 0.04);
   --font-cn: 'Noto Sans TC', -apple-system, sans-serif;
   --font-en: 'Playfair Display', Georgia, serif;
+  --font-display: 'Syne', sans-serif;
   --font-ui: 'DM Sans', 'Noto Sans TC', sans-serif;
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -93,9 +94,11 @@ button { font-family: inherit; cursor: none; border: none; background: none; col
 }
 .page-loader--hidden { opacity: 0; visibility: hidden; pointer-events: none; }
 .page-loader__text {
-  font-family: var(--font-en);
+  font-family: var(--font-display);
+  font-weight: 600;
   font-size: 3rem;
   color: var(--accent);
+  letter-spacing: -0.03em;
   animation: loaderPulse 1.2s ease-in-out infinite;
 }
 @keyframes loaderPulse {
@@ -121,12 +124,12 @@ button { font-family: inherit; cursor: none; border: none; background: none; col
   box-shadow: 0 1px 0 var(--border);
 }
 .header__logo {
-  font-family: var(--font-en);
-  font-size: 1.6rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
   font-weight: 600;
   color: var(--text);
-  letter-spacing: 0.04em;
-  position: relative;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   transition: color 0.3s;
 }
 .header__logo:hover { color: var(--accent); }
@@ -179,19 +182,20 @@ button { font-family: inherit; cursor: none; border: none; background: none; col
 .hero__name-cn {
   display: block;
   font-size: clamp(3.5rem, 8vw, 7rem);
-  font-weight: 200;
-  letter-spacing: 0.08em;
+  font-weight: 300;
+  letter-spacing: 0.04em;
   line-height: 1;
   color: var(--text);
 }
 .hero__name-en {
   display: block;
-  font-family: var(--font-en);
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 400; font-style: italic;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 600;
   color: var(--accent-dim);
-  margin-top: 0.3rem;
-  letter-spacing: 0.04em;
+  margin-top: 0.2rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 .hero__statement {
   font-size: clamp(1.1rem, 2vw, 1.35rem);

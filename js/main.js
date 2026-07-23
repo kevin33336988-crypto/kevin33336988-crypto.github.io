@@ -101,14 +101,13 @@
       }
       card.appendChild(media);
 
-      const overlay = document.createElement('div');
-      overlay.className = 'project__overlay';
-      overlay.innerHTML =
-        '<div class="project__num">' + String(i + 1).padStart(2, '0') + '</div>' +
+      const info = document.createElement('div');
+      info.className = 'project__info';
+      info.innerHTML =
         '<div class="project__client">' + p.client + '</div>' +
         '<div class="project__title">' + p.title + '</div>' +
         '<div class="project__year">' + p.year + '</div>';
-      card.appendChild(overlay);
+      card.appendChild(info);
       grid.appendChild(card);
     });
 

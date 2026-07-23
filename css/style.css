@@ -320,39 +320,42 @@ section {
 /* ===== PROJECTS GRID ===== */
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 .project {
   position: relative;
   overflow: hidden;
-  background: var(--bg-card);
-  border-radius: 3px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s var(--ease-out-expo);
+  background: transparent;
+  border-radius: 2px;
+  border: none;
+  box-shadow: none;
+  transition: transform 0.4s var(--ease-out-expo);
   cursor: pointer;
 }
 .project:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
 }
-.project:active { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.project:active { transform: translateY(-1px); }
 .project.hidden { display: none; }
 
 .project__media {
   position: relative;
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 3/4;
   overflow: hidden;
+  border-radius: 2px;
 }
 
 .project__img {
   width: 100%; height: 100%;
   object-fit: cover;
-  transition: transform 0.6s var(--ease-out-expo);
+  transition: transform 0.6s var(--ease-out-expo), filter 0.6s var(--ease-out-expo);
 }
-.project:hover .project__img { transform: scale(1.03); }
+.project:hover .project__img {
+  transform: scale(1.04);
+  filter: brightness(1.06);
+}
 
 /* ===== PLACEHOLDER ===== */
 .project__placeholder {
@@ -364,86 +367,69 @@ section {
 }
 .project__placeholder::before {
   content: '';
-  position: absolute; inset: 1.5rem;
+  position: absolute; inset: 1.2rem;
   border: 1px solid var(--border-light);
   border-radius: 1px;
   transition: all 0.6s var(--ease-out-expo);
 }
 .project:hover .project__placeholder::before {
-  inset: 2rem;
-  border-color: rgba(74, 111, 165, 0.25);
+  inset: 1.6rem;
+  border-color: rgba(74, 111, 165, 0.2);
 }
 .project__placeholder::after {
   content: '';
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 60px; height: 60px;
+  width: 48px; height: 48px;
   border: 1px solid var(--border-light);
   border-radius: 50%;
   transition: all 0.6s var(--ease-out-expo);
 }
 .project:hover .project__placeholder::after {
-  width: 100px; height: 100px;
-  border-color: rgba(74, 111, 165, 0.2);
+  width: 72px; height: 72px;
+  border-color: rgba(74, 111, 165, 0.15);
 }
 .project__placeholder-icon {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
   letter-spacing: 0.1em;
   position: relative;
   z-index: 1;
 }
 .project__placeholder-client {
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   color: var(--accent-dim);
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   letter-spacing: 0.08em;
   position: relative;
   z-index: 1;
 }
 
-/* ===== OVERLAY ===== */
-.project__overlay {
-  position: absolute;
-  inset: 0;
-  display: flex; flex-direction: column;
-  justify-content: flex-end;
-  padding: 2.5rem 2rem;
-  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
-  opacity: 0;
-  transition: opacity 0.5s var(--ease-out-expo);
-  z-index: 3;
-}
-.project:hover .project__overlay { opacity: 1; }
-.project__num {
-  font-family: var(--font-en);
-  font-size: 0.7rem;
-  color: #fff;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.04em;
-  opacity: 0.8;
+/* ===== PROJECT INFO (below image) ===== */
+.project__info {
+  padding: 0.75rem 0.2rem 0;
 }
 .project__client {
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
-  margin-bottom: 0.25rem;
+  color: var(--text-muted);
   font-family: var(--font-ui);
+  margin-bottom: 0.15rem;
 }
 .project__title {
-  font-size: 1.1rem;
+  font-size: 0.82rem;
   font-weight: 400;
-  color: #fff;
-  letter-spacing: 0.03em;
-  line-height: 1.4;
+  color: var(--text);
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  margin-bottom: 0.15rem;
 }
 .project__year {
   font-family: var(--font-en);
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.6);
-  margin-top: 0.25rem;
+  font-size: 0.7rem;
+  color: var(--accent-dim);
 }
 
 /* ===== REVEAL ===== */
@@ -821,7 +807,7 @@ section {
 
 /* ===== RESPONSIVE: TABLET ===== */
 @media (max-width: 1024px) {
-  .projects { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .projects { grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
   .about__stats { grid-template-columns: repeat(3, 1fr); }
   .about__details { grid-template-columns: repeat(3, 1fr); }
   .about__number, .contact__number { font-size: 5rem; right: 1rem; top: 3rem; }
@@ -856,24 +842,12 @@ section {
 
   /* Single column */
   .projects {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
   }
-
-  /* Mobile: always show overlay */
-  .project__overlay {
-    opacity: 1;
-    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);
-    padding: 1.5rem 1.2rem;
-  }
-  .project__num { font-size: 0.65rem; }
-  .project__client { font-size: 0.65rem; }
-  .project__title { font-size: 1rem; }
-  .project__year { font-size: 0.75rem; }
 
   .project:active {
     transform: scale(0.98);
-    box-shadow: var(--shadow-sm);
   }
 
   .about__number, .contact__number { display: none; }

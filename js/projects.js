@@ -53,5 +53,16 @@ const projects = [
     images: ["img/05-nike-1.jpg", "img/05-nike-2.jpg", "img/05-nike-3.jpg"],
     role: "各鞋款檔期道具製作、特殊道具、木作、鐵工發包",
     desc: "NIKE 全省店點櫥窗陳列與平面製作物，涵蓋 FREAK 3、LEBRON 18、KYRIE INFINITY、PG6、G.T. CUT 等多款旗艦鞋款檔期道具。從貼紙圖組、鞋墊道具到試穿體驗區，特殊道具結合木作與鐵工發包，將品牌運動基因轉化為店點視覺焦點。"
+  },
+  {
+    id: "my-probiotic",
+    title: "MY 樂酵素益生菌 包裝與 LOGO 設計",
+    client: "MY 樂酵素",
+    year: "2022",
+    category: "graphic-design",
+    cover: "img/my-probiotic-box.jpg",
+    images: ["img/my-probiotic-box.jpg", "img/my-probiotic-spread.jpg", "img/my-probiotic-logo.jpg"],
+    role: "LOGO 發想、包裝設計",
+    desc: "包裝及 LOGO 的發想皆以腸道設計做延伸，LOGO 融入品牌所想帶來的 MY LOVE 以及溫暖親情感。包裝視覺以酵素擴散的手法，帶入酵素益生菌的體內環保意象，將產品功效轉化為具感染力的視覺語言。"
   }
 ];

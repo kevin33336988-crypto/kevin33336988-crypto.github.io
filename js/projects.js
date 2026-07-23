@@ -104,10 +104,10 @@ const projects = [
     client: "達永建設",
     year: "2024",
     category: "commercial",
-    cover: "img/10-jixiangdao.jpg",
-    images: ["img/10-jixiangdao.jpg"],
+    cover: "img/10-jixiangdao-01.jpg",
+    images: ["img/10-jixiangdao-01.jpg", "img/10-jixiangdao-02.jpg", "img/10-jixiangdao-03.jpg", "img/10-jixiangdao-04.jpg"],
     role: "設計主管 · 接待中心空間設計",
-    desc: "以「吉祥道」為主題規劃接待中心。取「橘」和「吉」的同音字，將互動式橘色圓球懸掛天井，輕輕拉動即營造橘球在空中彈跳的活潑可愛感。橘色小沙發、七彩草地毯與錯落樹木，陽光自天井撒下穿過樹梢，讓人忍不住待上整個下午。"
+    desc: "以「橘」與「吉」同音為核心，規劃達永建設接待中心。明亮空間融入溫暖橘色調、復古霓虹燈與綠意植栽，打造舒適有趣的體驗場域。入口天井懸掛互動式橘色圓球，輕拉即可彈跳，象徵好運從天而降；橘色小沙發、七彩地毯與錯落樹木，陽光灑落，營造讓人流連忘返的午後氛圍。"
   },
   {
     id: "vivo-light-journey",

@@ -86,5 +86,16 @@ const projects = [
     images: ["img/10-jixiangdao-01.jpg", "img/10-jixiangdao-02.jpg", "img/10-jixiangdao-03.jpg", "img/10-jixiangdao-04.jpg"],
     role: "設計主管 · 接待中心空間設計",
     desc: "以「橘」與「吉」同音為核心，規劃達永建設接待中心。明亮空間融入溫暖橘色調、復古霓虹燈與綠意植栽，打造舒適有趣的體驗場域。入口天井懸掛互動式橘色圓球，輕拉即可彈跳，象徵好運從天而降；橘色小沙發、七彩地毯與錯落樹木，陽光灑落，營造讓人流連忘返的午後氛圍。"
+  },
+  {
+    id: "101-circus",
+    title: "TAIPEI 101 馬戲團奇幻之夜",
+    client: "TAIPEI 101",
+    year: "2025",
+    category: "brand-event",
+    cover: "img/101-circus-01.jpg",
+    images: ["img/101-circus-01.jpg", "img/101-circus-02.jpg", "img/101-circus-03.jpg", "img/101-circus-04.jpg", "img/101-circus-05.jpg"],
+    role: "設計主管 · 空間設計主導",
+    desc: "靈感源自巡迴馬戲團的奇幻氛圍，步入場景彷彿走進一座正在上演的節慶舞台。燈光亮起時，動物們歡快穿梭在華麗的旋轉木馬之間，旋轉木馬緩緩轉動，如夢似幻的視覺焦點層層展開。洋溢熱鬧又浪漫的節慶氣息，呈現夢想與希望交織的奇幻時刻。"
   }
 ];

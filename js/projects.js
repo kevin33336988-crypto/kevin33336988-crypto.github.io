@@ -137,8 +137,8 @@ const projects = [
     client: "MY 樂酵素",
     year: "2022",
     category: "graphic-design",
-    cover: "",
-    images: [],
+    cover: "img/my-probiotic-box.jpg",
+    images: ["img/my-probiotic-box.jpg", "img/my-probiotic-spread.jpg", "img/my-probiotic-logo.jpg"],
     role: "LOGO 發想、包裝設計",
     desc: "包裝及 LOGO 的發想皆以腸道設計做延伸，LOGO 融入品牌所想帶來的 MY LOVE 以及溫暖親情感。包裝視覺以酵素擴散的手法，帶入酵素益生菌的體內環保意象，將產品功效轉化為具感染力的視覺語言。"
   }

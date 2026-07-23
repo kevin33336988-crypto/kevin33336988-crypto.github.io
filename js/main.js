@@ -136,7 +136,8 @@
       'brand-event': 'Brand Event',
       'pop-up': 'Pop-up Store',
       'commercial': 'Commercial Interior',
-      'exhibition': 'Exhibition'
+      'exhibition': 'Exhibition',
+      'graphic-design': 'Graphic Design'
     };
 
     const hasCover = p.cover && !p.cover.includes('placeholder');

@@ -130,5 +130,16 @@ const projects = [
     images: ["img/12-urban-garden.jpg"],
     role: "設計主管 · 商空設計主導",
     desc: "「把自然，帶回日常。」將自然延伸至城市高空，以層次豐富的植栽、舒適的休憩空間與開闊的視野，創造人與環境、人與人之間的連結。Urban Garden 不只是景觀設計，更是一種重視健康、永續與生活品質的空間理念。"
+  },
+  {
+    id: "my-probiotic",
+    title: "MY 樂酵素益生菌 包裝與 LOGO 設計",
+    client: "MY 樂酵素",
+    year: "2022",
+    category: "graphic-design",
+    cover: "",
+    images: [],
+    role: "LOGO 發想、包裝設計",
+    desc: "包裝及 LOGO 的發想皆以腸道設計做延伸，LOGO 融入品牌所想帶來的 MY LOVE 以及溫暖親情感。包裝視覺以酵素擴散的手法，帶入酵素益生菌的體內環保意象，將產品功效轉化為具感染力的視覺語言。"
   }
 ];

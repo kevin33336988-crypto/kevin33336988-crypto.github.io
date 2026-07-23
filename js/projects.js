@@ -55,6 +55,17 @@ const projects = [
     desc: "NIKE 全省店點櫥窗陳列與平面製作物，涵蓋 FREAK 3、LEBRON 18、KYRIE INFINITY、PG6、G.T. CUT 等多款旗艦鞋款檔期道具。從貼紙圖組、鞋墊道具到試穿體驗區，特殊道具結合木作與鐵工發包，將品牌運動基因轉化為店點視覺焦點。"
   },
   {
+    id: "edwonder",
+    title: "EDWONDER POP-UP STORE 2021",
+    client: "EDWONDER",
+    year: "2021",
+    category: "pop-up",
+    cover: "img/edwonder-01.jpg",
+    images: ["img/edwonder-01.jpg", "img/edwonder-02.jpg", "img/edwonder-03.jpg", "img/edwonder-04.jpg"],
+    role: "空間結構配置、創意發想、建物結構",
+    desc: "WONDERFOOL 快閃迷宮，用感官尋走迷宮，其靈感來源於 WONDERFOOL 成長體驗，展區主要分為 3 個區域：EXPLORE 探索認知區、DARE 勇敢摸索區、WONDER 理想前行區。每個區域都建立於 EDWONDER 品牌精神，包含 EXPLORE 探索、DARE 勇敢、WONDER 好奇，並利用迷宮的形式來展現在人生成長階段中的未知和驚喜。"
+  },
+  {
     id: "my-probiotic",
     title: "MY 樂酵素益生菌 包裝與 LOGO 設計",
     client: "MY 樂酵素",

@@ -77,6 +77,17 @@ const projects = [
     desc: "包裝及 LOGO 的發想皆以腸道設計做延伸，LOGO 融入品牌所想帶來的 MY LOVE 以及溫暖親情感。包裝視覺以酵素擴散的手法，帶入酵素益生菌的體內環保意象，將產品功效轉化為具感染力的視覺語言。"
   },
   {
+    id: "101-worldmasterpiece",
+    title: "TAIPEI 101 WORLD MASTERPIECE 大師之作",
+    client: "TAIPEI 101",
+    year: "2023",
+    category: "brand-event",
+    cover: "img/101-worldmasterpiece-01.jpg",
+    images: ["img/101-worldmasterpiece-01.jpg", "img/101-worldmasterpiece-02.jpg", "img/101-worldmasterpiece-03.jpg", "img/101-worldmasterpiece-04.jpg"],
+    role: "設計主管 · 空間設計主導",
+    desc: "年度頂級珠寶腕錶大賞，以四季花植美景呼應鐘錶時計臻品。結合「工藝、飛行、珠寶、運動」四大主題，於台北101 SPACE 88 高空場域，以花卉的萌芽、茁壯、綻放與蓄藏演繹時序之美，在雲海與花藝間探索珠寶腕錶的極致工藝。"
+  },
+  {
     id: "dayong-jixiangdao",
     title: "達永建設 吉祥道",
     client: "達永建設",

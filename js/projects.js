@@ -84,7 +84,7 @@ const projects = [
     category: "brand-event",
     cover: "img/101-worldmasterpiece-01.jpg",
     images: ["img/101-worldmasterpiece-01.jpg", "img/101-worldmasterpiece-02.jpg", "img/101-worldmasterpiece-03.jpg", "img/101-worldmasterpiece-04.jpg"],
-    role: "設計主管 · 空間設計主導",
+    role: "空間設計主導、木作、鐵件、製作物發包",
     desc: "年度頂級珠寶腕錶大賞，以四季花植美景呼應鐘錶時計臻品。結合「工藝、飛行、珠寶、運動」四大主題，於台北101 SPACE 88 高空場域，以花卉的萌芽、茁壯、綻放與蓄藏演繹時序之美，在雲海與花藝間探索珠寶腕錶的極致工藝。"
   },
   {
@@ -106,7 +106,7 @@ const projects = [
     category: "brand-event",
     cover: "img/101-fairytale-01.jpg",
     images: ["img/101-fairytale-01.jpg", "img/101-fairytale-02.jpg", "img/101-fairytale-03.jpg", "img/101-fairytale-04.jpg"],
-    role: "設計主管 · 空間設計主導",
+    role: "空間設計主導、木作、鐵件、製作物發包",
     desc: "以童話王國為概念，打造台北101四樓的聖誕奇幻世界。繁花光廊以星光與花蕾環繞，莓粉與香檳色花瀑鋪陳浪漫光亭，長頸鹿守護月光寶座、旋轉木馬轉動夢境。聖誕樹掛滿純真心願，由薑餅人與泰迪熊守護，將聖誕浪漫化為一場穿越時光的奇幻旅程。"
   },
   {
@@ -117,7 +117,7 @@ const projects = [
     category: "brand-event",
     cover: "img/101-cloudmanor-01.jpg",
     images: ["img/101-cloudmanor-01.jpg", "img/101-cloudmanor-02.jpg", "img/101-cloudmanor-03.jpg"],
-    role: "設計主管 · 空間設計主導",
+    role: "空間設計主導、木作、鐵件、製作物發包",
     desc: "以法式綠籬與雲朵造型燈貫穿全區，打造嶄新風貌的101樓高空仙境。夢幻花朵、草坡休憩點與花卉搖椅交織成浪漫打卡場景，將法式莊園的優雅與台北天際線融為一體，重新定義城市高空的夢幻體驗。"
   },
   {
@@ -128,7 +128,7 @@ const projects = [
     category: "brand-event",
     cover: "img/sogo-xmas-01.jpg",
     images: ["img/sogo-xmas-01.jpg", "img/sogo-xmas-02.jpg", "img/sogo-xmas-03.jpg", "img/sogo-xmas-04.jpg"],
-    role: "設計主管 · 空間設計主導",
+    role: "空間設計主導、木作、鐵件、製作物發包",
     desc: "巨型聖誕樹綴滿奢華金色燈飾，底部開放式空間懸掛無數玻璃燈飾，鏡面反射營造宛如銀河星子環繞的奇幻浪漫。百貨大廳同步打造童話世界，放大版倒數日曆、擬真動物玩偶與禮物盒圍繞七彩聖誕樹，成為年度最夢幻的聖誕打卡點。"
   },
   {
@@ -139,7 +139,7 @@ const projects = [
     category: "brand-event",
     cover: "img/101-circus-01.jpg",
     images: ["img/101-circus-01.jpg", "img/101-circus-02.jpg", "img/101-circus-03.jpg", "img/101-circus-04.jpg", "img/101-circus-05.jpg"],
-    role: "設計主管 · 空間設計主導",
+    role: "空間設計主導、木作、鐵件、製作物發包",
     desc: "靈感源自巡迴馬戲團的奇幻氛圍，步入場景彷彿走進一座正在上演的節慶舞台。燈光亮起時，動物們歡快穿梭在華麗的旋轉木馬之間，旋轉木馬緩緩轉動，如夢似幻的視覺焦點層層展開。洋溢熱鬧又浪漫的節慶氣息，呈現夢想與希望交織的奇幻時刻。"
   },
   {
@@ -150,7 +150,7 @@ const projects = [
     category: "commercial",
     cover: "img/noke-twinkle-01.jpg",
     images: ["img/noke-twinkle-01.jpg", "img/noke-twinkle-02.jpg", "img/noke-twinkle-03.jpg", "img/noke-twinkle-04.jpg"],
-    role: "設計主管 · 空間設計主導",
+    role: "空間設計主導、木作、鐵件、製作物發包",
     desc: "以「閃閃冬季」為核心，運用白色聖誕樹、半透歐根紗與巨型植藝，打造宛如雪國的沉浸式場景。光線穿透紗幕形成柔霧層次，銀白小鹿與放大植株交織出童話氛圍。以純白主調營造無界空間語言，重新詮釋聖誕的浪漫與當代美學。"
   }
 ];

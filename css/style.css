@@ -443,41 +443,11 @@ section {
   color: var(--accent-dim);
 }
 
-/* ===== YEAR SECTION HEADER ===== */
-.project-year-section {
-  grid-column: 1 / -1;
-  padding: 2.2rem 0 0.6rem;
-  margin-top: 0.8rem;
-}
-.project-year-section:first-child {
-  margin-top: 0;
-  padding-top: 0;
-}
-.project-year-label {
-  font-family: var(--font-display);
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: var(--accent-dim);
-  letter-spacing: -0.01em;
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-}
-.project-year-label::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-  margin-top: 2px;
-}
-
 /* ===== REVEAL ===== */
 .reveal {
   opacity: 0;
   transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
 }
-.reveal--from-left  { transform: translateX(-40px); }
-.reveal--from-right { transform: translateX(40px); }
 .reveal--from-bottom { transform: translateY(50px); }
 .reveal--visible {
   opacity: 1;
@@ -934,8 +904,6 @@ section {
   .work__header-title { flex-direction: column; gap: 0.25rem; }
   .work__header-title-year { font-size: 0.9rem; }
 
-  .project-year-section { padding: 1.4rem 0 0.4rem; }
-  .project-year-label { font-size: 1.1rem; gap: 0.8rem; }
   .filter__count { font-size: 0.68rem; margin-left: 0.25rem; padding-left: 0.6rem; }
 }
 

@@ -73,9 +73,28 @@
   function renderProjects(filter = 'all') {
     grid.innerHTML = '';
     const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
-    const isMobile = window.innerWidth <= 768;
+
+    // Update project count
+    const countEl = document.getElementById('filter-count');
+    if (countEl) {
+      countEl.textContent = filtered.length + ' 件作品';
+    }
+
+    // Group by year and render
+    let lastYear = null;
 
     filtered.forEach((p, i) => {
+      // Extract year for grouping (handle "2020–2021" style ranges)
+      const groupYear = p.year.includes('–') ? p.year.split('–')[0].trim() : p.year;
+
+      if (groupYear !== lastYear) {
+        const yearSection = document.createElement('div');
+        yearSection.className = 'project-year-section reveal reveal--from-left';
+        yearSection.innerHTML = '<div class="project-year-label">' + groupYear + '</div>';
+        grid.appendChild(yearSection);
+        lastYear = groupYear;
+      }
+
       const card = document.createElement('div');
       card.className = 'project reveal reveal--from-bottom';
 

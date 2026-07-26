@@ -295,7 +295,7 @@ section {
 }
 
 /* ===== FILTER ===== */
-.filter { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.filter { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
 .filter__btn {
   padding: 0.6rem 1.4rem;
   font-size: 0.75rem;
@@ -315,6 +315,16 @@ section {
   border-color: var(--accent);
   font-weight: 500;
   box-shadow: 0 4px 16px var(--accent-glow);
+}
+.filter__count {
+  font-family: var(--font-en);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  margin-left: 0.5rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--border-light);
+  white-space: nowrap;
 }
 
 /* ===== PROJECTS GRID ===== */
@@ -408,28 +418,57 @@ section {
 
 /* ===== PROJECT INFO (below image) ===== */
 .project__info {
-  padding: 0.75rem 0.2rem 0;
+  padding: 0.8rem 0.1rem 0;
 }
 .project__client {
-  font-size: 0.6rem;
-  letter-spacing: 0.12em;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
   font-family: var(--font-ui);
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.2rem;
+  font-weight: 400;
 }
 .project__title {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 400;
   color: var(--text);
   letter-spacing: 0.02em;
-  line-height: 1.35;
-  margin-bottom: 0.15rem;
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
 }
 .project__year {
   font-family: var(--font-en);
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   color: var(--accent-dim);
+}
+
+/* ===== YEAR SECTION HEADER ===== */
+.project-year-section {
+  grid-column: 1 / -1;
+  padding: 2.2rem 0 0.6rem;
+  margin-top: 0.8rem;
+}
+.project-year-section:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.project-year-label {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--accent-dim);
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.project-year-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+  margin-top: 2px;
 }
 
 /* ===== REVEAL ===== */
@@ -894,6 +933,10 @@ section {
 
   .work__header-title { flex-direction: column; gap: 0.25rem; }
   .work__header-title-year { font-size: 0.9rem; }
+
+  .project-year-section { padding: 1.4rem 0 0.4rem; }
+  .project-year-label { font-size: 1.1rem; gap: 0.8rem; }
+  .filter__count { font-size: 0.68rem; margin-left: 0.25rem; padding-left: 0.6rem; }
 }
 
 @media (max-width: 480px) {

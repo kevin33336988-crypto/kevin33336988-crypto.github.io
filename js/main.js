@@ -80,6 +80,7 @@
       countEl.textContent = filtered.length + ' 件作品';
     }
 
+    filtered.forEach((p, i) => {
       const card = document.createElement('div');
       card.className = 'project reveal reveal--from-bottom';
 

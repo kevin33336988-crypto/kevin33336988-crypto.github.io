@@ -121,6 +121,17 @@ const projects = [
     desc: "以法式綠籬與雲朵造型燈貫穿全區，打造嶄新風貌的101樓高空仙境。夢幻花朵、草坡休憩點與花卉搖椅交織成浪漫打卡場景，將法式莊園的優雅與台北天際線融為一體，重新定義城市高空的夢幻體驗。"
   },
   {
+    id: "sogo-xmas",
+    title: "SOGO 復興館 鏡光聖誕樹",
+    client: "SOGO 復興館",
+    year: "2024",
+    category: "brand-event",
+    cover: "img/sogo-xmas-01.jpg",
+    images: ["img/sogo-xmas-01.jpg", "img/sogo-xmas-02.jpg", "img/sogo-xmas-03.jpg", "img/sogo-xmas-04.jpg"],
+    role: "設計主管 · 空間設計主導",
+    desc: "巨型聖誕樹綴滿奢華金色燈飾，底部開放式空間懸掛無數玻璃燈飾，鏡面反射營造宛如銀河星子環繞的奇幻浪漫。百貨大廳同步打造童話世界，放大版倒數日曆、擬真動物玩偶與禮物盒圍繞七彩聖誕樹，成為年度最夢幻的聖誕打卡點。"
+  },
+  {
     id: "101-circus",
     title: "TAIPEI 101 馬戲團奇幻之夜",
     client: "TAIPEI 101",

@@ -99,6 +99,17 @@ const projects = [
     desc: "以童話王國為概念，打造台北101四樓的聖誕奇幻世界。繁花光廊以星光與花蕾環繞，莓粉與香檳色花瀑鋪陳浪漫光亭，長頸鹿守護月光寶座、旋轉木馬轉動夢境。聖誕樹掛滿純真心願，由薑餅人與泰迪熊守護，將聖誕浪漫化為一場穿越時光的奇幻旅程。"
   },
   {
+    id: "101-cloudmanor",
+    title: "TAIPEI 101 法式雲朵莊園",
+    client: "TAIPEI 101",
+    year: "2024",
+    category: "brand-event",
+    cover: "img/101-cloudmanor-01.jpg",
+    images: ["img/101-cloudmanor-01.jpg", "img/101-cloudmanor-02.jpg", "img/101-cloudmanor-03.jpg"],
+    role: "設計主管 · 空間設計主導",
+    desc: "以法式綠籬與雲朵造型燈貫穿全區，打造嶄新風貌的101樓高空仙境。夢幻花朵、草坡休憩點與花卉搖椅交織成浪漫打卡場景，將法式莊園的優雅與台北天際線融為一體，重新定義城市高空的夢幻體驗。"
+  },
+  {
     id: "101-circus",
     title: "TAIPEI 101 馬戲團奇幻之夜",
     client: "TAIPEI 101",

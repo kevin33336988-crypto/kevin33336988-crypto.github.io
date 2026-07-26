@@ -97,5 +97,16 @@ const projects = [
     images: ["img/101-circus-01.jpg", "img/101-circus-02.jpg", "img/101-circus-03.jpg", "img/101-circus-04.jpg", "img/101-circus-05.jpg"],
     role: "設計主管 · 空間設計主導",
     desc: "靈感源自巡迴馬戲團的奇幻氛圍，步入場景彷彿走進一座正在上演的節慶舞台。燈光亮起時，動物們歡快穿梭在華麗的旋轉木馬之間，旋轉木馬緩緩轉動，如夢似幻的視覺焦點層層展開。洋溢熱鬧又浪漫的節慶氣息，呈現夢想與希望交織的奇幻時刻。"
+  },
+  {
+    id: "noke-twinkle",
+    title: "NOKE 忠泰樂生活 Twinkle with WINTER",
+    client: "NOKE 忠泰樂生活",
+    year: "2025",
+    category: "commercial",
+    cover: "img/noke-twinkle-01.jpg",
+    images: ["img/noke-twinkle-01.jpg", "img/noke-twinkle-02.jpg", "img/noke-twinkle-03.jpg", "img/noke-twinkle-04.jpg"],
+    role: "設計主管 · 空間設計主導",
+    desc: "以「閃閃冬季」為核心，運用白色聖誕樹、半透歐根紗與巨型植藝，打造宛如雪國的沉浸式場景。光線穿透紗幕形成柔霧層次，銀白小鹿與放大植株交織出童話氛圍。以純白主調營造無界空間語言，重新詮釋聖誕的浪漫與當代美學。"
   }
 ];

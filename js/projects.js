@@ -88,6 +88,17 @@ const projects = [
     desc: "以「橘」與「吉」同音為核心，規劃達永建設接待中心。明亮空間融入溫暖橘色調、復古霓虹燈與綠意植栽，打造舒適有趣的體驗場域。入口天井懸掛互動式橘色圓球，輕拉即可彈跳，象徵好運從天而降；橘色小沙發、七彩地毯與錯落樹木，陽光灑落，營造讓人流連忘返的午後氛圍。"
   },
   {
+    id: "101-fairytale",
+    title: "TAIPEI 101 耶誕童話王國",
+    client: "TAIPEI 101",
+    year: "2024",
+    category: "brand-event",
+    cover: "img/101-fairytale-01.jpg",
+    images: ["img/101-fairytale-01.jpg", "img/101-fairytale-02.jpg", "img/101-fairytale-03.jpg", "img/101-fairytale-04.jpg"],
+    role: "設計主管 · 空間設計主導",
+    desc: "以童話王國為概念，打造台北101四樓的聖誕奇幻世界。繁花光廊以星光與花蕾環繞，莓粉與香檳色花瀑鋪陳浪漫光亭，長頸鹿守護月光寶座、旋轉木馬轉動夢境。聖誕樹掛滿純真心願，由薑餅人與泰迪熊守護，將聖誕浪漫化為一場穿越時光的奇幻旅程。"
+  },
+  {
     id: "101-circus",
     title: "TAIPEI 101 馬戲團奇幻之夜",
     client: "TAIPEI 101",

@@ -1,4 +1,16 @@
 const projects = [
+  // ── 2026 ──
+  {
+    id: "huangxiang-newyear",
+    title: "皇翔台北廣場 新年佈置",
+    client: "皇翔建設",
+    year: "2026",
+    category: "commercial",
+    cover: "img/huangxiang-newyear-01.jpg",
+    images: ["img/huangxiang-newyear-01.jpg", "img/huangxiang-newyear-02.jpg", "img/huangxiang-newyear-03.jpg", "img/huangxiang-newyear-04.jpg"],
+    role: "設計主管 · 空間設計主導",
+    desc: "以傳統新年意象結合當代燈光設計，為皇翔台北廣場打造沈浸式節慶氛圍。巨型玻璃帷幕貼滿造型福字與紅梅窗花，懸掛大紅燈籠層次堆疊；下層窗格內陳列紅橙漸層巨型花藝燈飾，溫暖光暈穿透夜幕。入口兩側魚躍裝置寓意年年有餘，搭配暖黃燈串纏繞綠植，將中式節慶元素轉化為現代都會的視覺焦點。"
+  },
   // ── 2025 ──
   {
     id: "noke-twinkle",

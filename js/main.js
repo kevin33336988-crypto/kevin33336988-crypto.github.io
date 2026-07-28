@@ -30,14 +30,24 @@
       cursor.style.top = mouseY + 'px';
     }, { passive: true });
 
+    let rafId;
     function animateFollower() {
       followerX += (mouseX - followerX) * 0.12;
       followerY += (mouseY - followerY) * 0.12;
       cursorFollower.style.left = followerX + 'px';
       cursorFollower.style.top = followerY + 'px';
-      requestAnimationFrame(animateFollower);
+      rafId = requestAnimationFrame(animateFollower);
     }
-    animateFollower();
+    rafId = requestAnimationFrame(animateFollower);
+
+    // Pause cursor animation when page is hidden (save CPU/battery)
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        cancelAnimationFrame(rafId);
+      } else {
+        rafId = requestAnimationFrame(animateFollower);
+      }
+    });
 
     const hoverTargets = document.querySelectorAll('a, button, .project, .filter__btn, .modal__close, .contact__email, .about__stat');
     hoverTargets.forEach(el => {
@@ -52,21 +62,28 @@
     });
   }
 
-  /* ===== HEADER: glass effect on scroll ===== */
+  /* ===== HEADER: glass effect on scroll (rAF throttled) ===== */
   let lastScroll = 0;
+  let scrollTicking = false;
   window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll > 100 && currentScroll > lastScroll) {
-      header.classList.add('header--hidden');
-    } else {
-      header.classList.remove('header--hidden');
+    if (!scrollTicking) {
+      requestAnimationFrame(() => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > 100 && currentScroll > lastScroll) {
+          header.classList.add('header--hidden');
+        } else {
+          header.classList.remove('header--hidden');
+        }
+        if (currentScroll > 20) {
+          header.classList.add('header--scrolled');
+        } else {
+          header.classList.remove('header--scrolled');
+        }
+        lastScroll = currentScroll;
+        scrollTicking = false;
+      });
+      scrollTicking = true;
     }
-    if (currentScroll > 20) {
-      header.classList.add('header--scrolled');
-    } else {
-      header.classList.remove('header--scrolled');
-    }
-    lastScroll = currentScroll;
   }, { passive: true });
 
   /* ===== RENDER PROJECTS ===== */
@@ -97,6 +114,7 @@
         img.src = p.cover;
         img.alt = p.title;
         img.loading = 'lazy';
+        img.decoding = 'async';
         media.appendChild(img);
       } else {
         const ph = document.createElement('div');
@@ -160,7 +178,7 @@
     const heroImgHtml = hasCover ? '<img class="modal__hero-img" src="' + p.cover + '" alt="' + p.title + '">' : '';
 
     const galleryImgs = (p.images && p.images.length > 1)
-      ? '<div class="modal__gallery">' + p.images.map(src => '<img src="' + src + '" alt="' + p.title + '" loading="lazy">').join('') + '</div>'
+      ? '<div class="modal__gallery">' + p.images.map(src => '<img src="' + src + '" alt="' + p.title + '" loading="lazy" decoding="async">').join('') + '</div>'
       : '';
 
     modalBody.innerHTML =
@@ -208,15 +226,5 @@
 
   /* ===== INIT ===== */
   renderProjects();
-
-  // Re-render on resize (for mobile/desktop layout switch)
-  let resizeTimer;
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      const activeFilter = document.querySelector('.filter__btn.active');
-      renderProjects(activeFilter ? activeFilter.dataset.filter : 'all');
-    }, 300);
-  });
 
 })();

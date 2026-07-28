@@ -178,7 +178,9 @@
     const heroImgHtml = hasCover ? '<img class="modal__hero-img" src="' + p.cover + '" alt="' + p.title + '">' : '';
 
     const galleryImgs = (p.images && p.images.length > 1)
-      ? '<div class="modal__gallery">' + p.images.map(src => '<img src="' + src + '" alt="' + p.title + '" loading="lazy" decoding="async">').join('') + '</div>'
+      ? '<div class="modal__gallery">' + p.images.map(src =>
+          '<div class="gallery-skeleton"><img src="' + src + '" alt="' + p.title + '" loading="lazy" decoding="async" onload="this.classList.add(\'loaded\')" onerror="this.parentElement.remove()"></div>'
+        ).join('') + '</div>'
       : '';
 
     modalBody.innerHTML =

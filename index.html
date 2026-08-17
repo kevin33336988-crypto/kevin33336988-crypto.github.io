@@ -3,205 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>瞿愷 Kevin Chu — Spatial Design Portfolio</title>
-  <meta name="description" content="瞿愷 Kevin Chu 空間設計作品集。設計主管，專精品牌活動空間、快閃店、商業空間與節慶裝置設計。">
-  <link rel="stylesheet" href="css/style.css?v=17">
+  <title>瞿愷 Kevin Chu — Portfolio 暫時不開放</title>
+  <meta name="robots" content="noindex, nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&family=Noto+Sans+TC:wght@300;400&family=DM+Sans:wght@400&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      display:flex;align-items:center;justify-content:center;
+      background:#fafaf9;color:#1a1a1a;
+      font-family:'Noto Sans TC','DM Sans',sans-serif;
+      text-align:center;padding:2rem;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:520px}
+    .logo{
+      font-family:'Syne',sans-serif;font-weight:600;letter-spacing:0.18em;
+      font-size:1rem;color:#4a6fa5;margin-bottom:2.5rem;
+    }
+    h1{
+      font-family:'Syne','Noto Sans TC',sans-serif;
+      font-weight:400;font-size:1.9rem;letter-spacing:0.06em;
+      margin-bottom:1rem;line-height:1.4;
+    }
+    p{color:#5e5e5e;line-height:1.9;font-size:0.95rem;font-weight:300}
+    .sub{margin-top:2rem;font-size:0.85rem;color:#969696}
+    .sub a{color:#4a6fa5;text-decoration:none;border-bottom:1px solid rgba(74,111,165,0.3)}
+    .hint{margin-top:2.5rem;font-size:0.78rem;color:#b0b0b0;letter-spacing:0.04em}
+  </style>
 </head>
 <body>
-  <div class="cursor"></div>
-  <div class="cursor-follower"></div>
-
-  <div class="page-loader">
-    <div class="page-loader__text">KC</div>
+  <div class="wrap">
+    <div class="logo">KC — KEVIN CHU</div>
+    <h1>Portfolio 暫時不開放</h1>
+    <p>感謝您的關注。<br>目前暫不對外展示作品，未來重新開放時再與您相見。</p>
+    <p class="sub">如需聯繫：<a href="mailto:kevinchu@lemoment.co">kevinchu@lemoment.co</a></p>
+    <p class="hint">此為暫時維護頁 · 作品資料已完整保留，可隨時一鍵復原</p>
   </div>
-
-  <header class="header">
-    <a href="#hero" class="header__logo">KC</a>
-    <nav class="header__nav">
-      <a href="#work" class="header__link"><span class="header__link-num">01</span> Work</a>
-      <a href="#about" class="header__link"><span class="header__link-num">02</span> About</a>
-      <a href="#contact" class="header__link"><span class="header__link-num">03</span> Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="hero" class="hero">
-      <div class="hero__inner">
-        <div class="hero__content">
-          <div class="hero__tag">
-            <span class="hero__tag-line"></span>
-            <span>Brand Experiences &amp; Spatial Installations</span>
-          </div>
-          <h1 class="hero__name">
-            <span class="hero__name-cn">瞿愷</span>
-            <span class="hero__name-en">Kevin Chu</span>
-          </h1>
-          <p class="hero__statement">
-            以空間為載體，<br>
-            將品牌精神轉譯為可觸摸的體驗。
-          </p>
-          <div class="hero__scroll">
-            <span>瀏覽作品</span>
-            <div class="hero__scroll-line"></div>
-          </div>
-        </div>
-        <div class="hero__portrait">
-          <img src="img/about-portrait.jpg" alt="Kevin Chu 瞿愷">
-        </div>
-      </div>
-    </section>
-
-    <section id="work" class="work">
-      <div class="work__header">
-        <div class="work__header-label">Selected Works</div>
-        <h2 class="work__header-title">
-          <span class="work__header-title-main">作品集</span>
-          <span class="work__header-title-year">2019 – 2026</span>
-        </h2>
-        <div class="filter">
-          <button class="filter__btn active" data-filter="all">全部</button>
-          <button class="filter__btn" data-filter="brand-event">品牌活動</button>
-          <button class="filter__btn" data-filter="pop-up">快閃店</button>
-          <button class="filter__btn" data-filter="commercial">商業空間</button>
-          <button class="filter__btn" data-filter="exhibition">展覽</button>
-          <button class="filter__btn" data-filter="graphic-design">平面設計</button>
-          <span class="filter__count" id="filter-count">14 件作品</span>
-        </div>
-      </div>
-      <div class="projects" id="projects"></div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="about__number" aria-hidden="true">02</div>
-      <div class="about__inner">
-        <h2 class="about__title">關於我</h2>
-        <div class="about__bio">
-          <p class="about__bio-lead">從景觀建築到空間設計，十年間穿梭於不同尺度——從車展舞台的巨型結構，到精品花藝的毫米細節。</p>
-          <p>1993 年生於台北。中華大學景觀建築系畢業後，從景觀工程起步，2018 年轉入活動空間設計領域。現任瞬設計（LE MOMENT）設計主管，帶領團隊為 TAIPEI 101、BELLAVITA 寶麗廣場、NOKE 忠泰樂生活等指標場域，打造兼具品牌敘事與感官沉浸的空間體驗。</p>
-        </div>
-        <div class="about__stats">
-          <div class="about__stat">
-            <span class="about__stat-num">10+</span>
-            <span class="about__stat-label">年設計經驗</span>
-          </div>
-          <div class="about__stat">
-            <span class="about__stat-num">50+</span>
-            <span class="about__stat-label">大型專案</span>
-          </div>
-          <div class="about__stat">
-            <span class="about__stat-num">2022</span>
-            <span class="about__stat-label">加入瞬設計</span>
-          </div>
-        </div>
-        <div class="about__timeline">
-          <h4 class="about__timeline-title">工作經歷</h4>
-          <div class="timeline">
-            <div class="timeline__item">
-              <span class="timeline__year">2015</span>
-              <span class="timeline__dot"></span>
-              <div class="timeline__info">
-                <span class="timeline__role">實習設計</span>
-                <span class="timeline__company">合圃股份有限公司</span>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <span class="timeline__year">2017–2018</span>
-              <span class="timeline__dot"></span>
-              <div class="timeline__info">
-                <span class="timeline__role">助理設計</span>
-                <span class="timeline__company">頂築工程顧問有限公司</span>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <span class="timeline__year">2018–2019</span>
-              <span class="timeline__dot"></span>
-              <div class="timeline__info">
-                <span class="timeline__role">助理設計</span>
-                <span class="timeline__company">界映文化創意有限公司</span>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <span class="timeline__year">2019–2020</span>
-              <span class="timeline__dot"></span>
-              <div class="timeline__info">
-                <span class="timeline__role">設計</span>
-                <span class="timeline__company">界映文化創意有限公司</span>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <span class="timeline__year">2021–2022</span>
-              <span class="timeline__dot"></span>
-              <div class="timeline__info">
-                <span class="timeline__role">資深設計</span>
-                <span class="timeline__company">視中心創意股份有限公司</span>
-              </div>
-            </div>
-            <div class="timeline__item timeline__item--current">
-              <span class="timeline__year">2022 –</span>
-              <span class="timeline__dot"></span>
-              <div class="timeline__info">
-                <span class="timeline__role">設計主管</span>
-                <span class="timeline__company">瞬設計 LE MOMENT</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about__details">
-          <div class="about__detail">
-            <h4>專長</h4>
-            <p>空間設計 · 花藝裝置 · 品牌體驗 · 3D 視覺化</p>
-          </div>
-          <div class="about__detail">
-            <h4>工具</h4>
-            <p>SketchUp · Enscape · AutoCAD · Adobe Creative Suite</p>
-          </div>
-          <div class="about__detail">
-            <h4>客戶</h4>
-            <p>TAIPEI 101 · BELLAVITA · NOKE · VIVO · 達永建設 · BMW · NIKE</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="contact__number" aria-hidden="true">03</div>
-      <div class="contact__inner">
-        <h2 class="contact__title">聯繫我</h2>
-        <p class="contact__text">如有空間設計合作、委託或任何想法，<br>歡迎隨時來信交流。</p>
-        <a href="mailto:kevin33336988@gmail.com" class="contact__email">
-          kevin33336988@gmail.com
-          <span class="contact__email-arrow">→</span>
-        </a>
-        <div class="contact__location">Taipei, Taiwan</div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__inner">
-      <span>© 2026 Kevin Chu</span>
-      <span class="footer__dot">·</span>
-      <span>All rights reserved.</span>
-    </div>
-    <p class="footer__disclaimer">本網站所展示之作品均為本人參與設計之專案。<br>照片主要來源為團隊攝影師現場拍攝紀錄，少部分取自公開媒體報導。<br>所有內容僅供個人作品集非營利展示，無任何商業用途。各品牌名稱、商標與視覺元素歸屬原委託客戶所有。<br>如有任何照片涉及著作權疑慮，請來信告知（kevin33336988@gmail.com），我們將立即移除。</p>
-  </footer>
-
-  <div class="modal" id="project-modal">
-    <div class="modal__overlay"></div>
-    <div class="modal__container">
-      <div class="modal__header">
-        <button class="modal__close" aria-label="Close">
-          <span></span><span></span>
-        </button>
-      </div>
-      <div class="modal__body" id="modal-body"></div>
-    </div>
-  </div>
-
-  <script src="js/projects.js?v=7"></script>
-  <script src="js/main.js?v=5"></script>
 </body>
 </html>
